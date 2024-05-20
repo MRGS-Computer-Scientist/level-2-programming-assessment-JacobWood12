@@ -1,5 +1,9 @@
 """ Tkinter is for the GUI. """
-from tkinter import Tk, Frame
+from tkinter import Tk, Frame, Button, TOP
+
+def addtask():
+    """ Add task function, activated when the "Add Task" button is pressed. """
+    print("Add task button pressed!")
 
 # Defines height and width of the window
 w_width = 500
@@ -17,5 +21,8 @@ tasks_frame.pack()
 # This is where the buttons at the bottom will go.
 buttons_frame = Frame(background="#D9D9D9", width=w_width, height=150)
 buttons_frame.pack()
+
+# Add task button.
+Button(buttons_frame, text="+ | Add Task", command=addtask).pack(side = TOP)
 
 window.mainloop()
