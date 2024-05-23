@@ -12,18 +12,18 @@ def task_button_pressed(instance):
     print(f"Task button {instance} pressed!")
 
 class App:
-    """ App. """
+    """ Contains the main window for now. """
     def __init__(self):
-        # Sets up window.
+        # Sets up start screen.
         window = Tk()
         window.geometry = str(w_width) + "x" + str(w_height)
         window.title(window_title)
 
-        # This is where the list of tasks will go.
+        # This is the frame where the list of tasks will go.
         tasks_frame = Frame(background=tasks_bg_colour, width=w_width, height=650)
         tasks_frame.grid()
 
-        # This is where the buttons at the bottom will go.
+        # This is the frame where the buttons at the bottom will go.
         buttons_frame = Frame(background=buttons_bg_colour, width=w_width, height=150)
         buttons_frame.grid()
 
@@ -31,7 +31,7 @@ class App:
         addtask_button = Button(buttons_frame, text="+ | Add Task", command=addtask, bg=buttons_bg_colour)
         addtask_button.place(relx=0.5, rely=0.5, anchor="center")
 
-        # Task button.
+        # Task buttons.
         task_button1 = Button(tasks_frame, text="Task 1", command= lambda: task_button_pressed(1))
         task_button1.grid(row=0,column=0)
 
@@ -44,4 +44,5 @@ class App:
         task_button4 = Button(tasks_frame, text="Task 4", command= lambda: task_button_pressed(4))
         task_button4.grid(row=3,column=0)
 
+        # Starts the program looping to open the window.
         window.mainloop()
