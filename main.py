@@ -26,4 +26,8 @@ buttons_frame.pack()
 addtask_button = Button(buttons_frame, text="+ | Add Task", command=addtask, bg="#D9D9D9")
 addtask_button.place(relx=0.5, rely=0.5, anchor="center")
 
+# Task button.
+task_button = Button(tasks_frame, text="Task 1")
+task_button.pack()
+
 window.mainloop()
