@@ -7,3 +7,6 @@ w_height = 750
 # Colours.
 tasks_bg_colour = "#FFFFFF"
 buttons_bg_colour = "#D9D9D9"
+
+# Title of the main window.
+window_title = str("Homework Planner.")

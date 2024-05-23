@@ -1,7 +1,7 @@
 """ The main file of a GUI homework planner. """
 # Tkinter is for the GUI, app_settings contains all the global variables.
 from tkinter import Tk, Frame, Button
-from app_settings import w_width, w_height, tasks_bg_colour, buttons_bg_colour
+from app_settings import w_width, w_height, window_title, tasks_bg_colour, buttons_bg_colour
 
 def addtask():
     """ Add task function, activated when the "Add Task" button is pressed. """
@@ -10,7 +10,7 @@ def addtask():
 # Sets up window.
 window = Tk()
 window.geometry = str(w_width) + "x" + str(w_height)
-window.title("Application")
+window.title(window_title)
 
 # This is where the list of tasks will go.
 tasks_frame = Frame(background=tasks_bg_colour, width=w_width, height=650)
