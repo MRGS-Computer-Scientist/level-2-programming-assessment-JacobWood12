@@ -15,34 +15,34 @@ class App:
     """ Contains the main window for now. """
     def __init__(self):
         # Sets up start screen.
-        window = Tk()
-        window.geometry = str(w_width) + "x" + str(w_height)
-        window.title(window_title)
+        self.window = Tk()
+        self.window.geometry = str(w_width) + "x" + str(w_height)
+        self.window.title(window_title)
 
         # This is the frame where the list of tasks will go.
-        tasks_frame = Frame(background=tasks_bg_colour, width=w_width, height=650)
-        tasks_frame.grid()
+        self.tasks_frame = Frame(background=tasks_bg_colour, width=w_width, height=650)
+        self.tasks_frame.grid()
 
         # This is the frame where the buttons at the bottom will go.
-        buttons_frame = Frame(background=buttons_bg_colour, width=w_width, height=150)
-        buttons_frame.grid()
+        self.buttons_frame = Frame(background=buttons_bg_colour, width=w_width, height=150)
+        self.buttons_frame.grid()
 
         # Button that runs the addtask function.
-        addtask_button = Button(buttons_frame, text="+ | Add Task", command=addtask, bg=buttons_bg_colour)
-        addtask_button.place(relx=0.5, rely=0.5, anchor="center")
+        self.addtask_button = Button(self.buttons_frame, text="+ | Add Task", command=addtask, bg=buttons_bg_colour)
+        self.addtask_button.place(relx=0.5, rely=0.5, anchor="center")
 
         # Task buttons.
-        task_button1 = Button(tasks_frame, text="Task 1", command= lambda: task_button_pressed(1))
-        task_button1.grid(row=0,column=0)
+        self.task_button1 = Button(self.tasks_frame, text="Task 1", command= lambda: task_button_pressed(1))
+        self.task_button1.grid(row=0,column=0)
 
-        task_button2 = Button(tasks_frame, text="Task 2", command= lambda: task_button_pressed(2))
-        task_button2.grid(row=1,column=0)
+        self.task_button2 = Button(self.tasks_frame, text="Task 2", command= lambda: task_button_pressed(2))
+        self.task_button2.grid(row=1,column=0)
 
-        task_button3 = Button(tasks_frame, text="Task 3", command= lambda: task_button_pressed(3))
-        task_button3.grid(row=2,column=0)
+        self.task_button3 = Button(self.tasks_frame, text="Task 3", command= lambda: task_button_pressed(3))
+        self.task_button3.grid(row=2,column=0)
 
-        task_button4 = Button(tasks_frame, text="Task 4", command= lambda: task_button_pressed(4))
-        task_button4.grid(row=3,column=0)
+        self.task_button4 = Button(self.tasks_frame, text="Task 4", command= lambda: task_button_pressed(4))
+        self.task_button4.grid(row=3,column=0)
 
         # Starts the program looping to open the window.
-        window.mainloop()
+        self.window.mainloop()
