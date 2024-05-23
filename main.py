@@ -1,4 +1,4 @@
-""" The main file of a GUI homework planner. """
+""" The main file. Run this one. """
 # Imports the App class from app.py.
 from app import App
 
