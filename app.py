@@ -7,6 +7,9 @@ def addtask():
     """ Add task function, activated when the "Add Task" button is pressed. """
     print("Add task button pressed!")
 
+def task_button_pressed(instance):
+    """ Activated when one of the task buttons is pressed. """
+    print(f"Task button {instance} pressed!")
 
 class App:
     """ App. """
@@ -29,16 +32,16 @@ class App:
         addtask_button.place(relx=0.5, rely=0.5, anchor="center")
 
         # Task button.
-        task_button1 = Button(tasks_frame, text="Task 1")
+        task_button1 = Button(tasks_frame, text="Task 1", command=task_button_pressed(1))
         task_button1.grid(row=0,column=0)
 
-        task_button2 = Button(tasks_frame, text="Task 2")
+        task_button2 = Button(tasks_frame, text="Task 2", command=task_button_pressed(1))
         task_button2.grid(row=1,column=0)
 
-        task_button3 = Button(tasks_frame, text="Task 3")
+        task_button3 = Button(tasks_frame, text="Task 3", command=task_button_pressed(1))
         task_button3.grid(row=2,column=0)
 
-        task_button4 = Button(tasks_frame, text="Task 4")
+        task_button4 = Button(tasks_frame, text="Task 4", command=task_button_pressed(1))
         task_button4.grid(row=3,column=0)
 
         window.mainloop()
