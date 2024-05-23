@@ -1,4 +1,5 @@
-""" Tkinter is for the GUI. """
+""" The main file of a GUI homework planner. """
+# Tkinter is for the GUI, app_settings contains all the global variables.
 from tkinter import Tk, Frame, Button
 from app_settings import w_width, w_height, tasks_bg_colour, buttons_bg_colour
 
