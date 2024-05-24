@@ -29,7 +29,11 @@ class App:
 
         # Button that runs the addtask function.
         self.addtask_button = Button(self.buttons_frame, text="+ | Add Task", command=addtask, bg=buttons_bg_colour)
-        self.addtask_button.place(relx=0.5, rely=0.5, anchor="center")
+        self.addtask_button.place(relx=0.25, rely=0.5, anchor="center")
+
+        # Button that closes the window.
+        self.exit_button = Button(self.buttons_frame, text="Exit", command=exit, bg=buttons_bg_colour)
+        self.exit_button.place(relx=0.75, rely=0.5, anchor="center")
 
         # Task buttons.
         self.task_button1 = Button(self.tasks_frame, text="Task 1", command= lambda: task_button_pressed(1))
