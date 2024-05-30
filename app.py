@@ -17,7 +17,7 @@ class App:
 		# Sets up start screen.
 		self.window = Tk()
 		self.window.geometry = str(w_width) + "x" + str(w_height)
-		self.window.title = str((window_title))
+		self.window.title(window_title)
 
 		# This is the frame where the list of tasks will go.
 		self.tasks_frame = Frame(background=tasks_bg_colour, width=w_width, height=650)
