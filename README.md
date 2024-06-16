@@ -10,6 +10,6 @@
 
 - Project management - [Homework Planner Development Plan](https://www.notion.so/jacob-wood-school/c353bdf85ea04d2883be0f49d709397a?v=71d41a8860504b228813ed40a77ad5b7&pvs=4).
 
---
+---
 
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15054191&assignment_repo_type=AssignmentRepo)
