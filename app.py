@@ -3,10 +3,6 @@
 from tkinter import Tk, Frame, Button
 from app_settings import w_width, w_height, window_title, tasks_bg_colour, buttons_bg_colour
 
-def addtask():
-	""" Add task function, activated when the "Add Task" button is pressed. """
-	print("Add task button pressed!")
-
 def task_button_pressed(instance):
 	""" Activated when one of the task buttons is pressed. """
 	print(f"Task button {instance} pressed!")
@@ -14,6 +10,12 @@ def task_button_pressed(instance):
 class App:
 	""" Contains the main window for now. """
 	def __init__(self):
+
+		def addtask():
+			""" Activated when the addtask button is pressed. """
+			self.window.destroy()
+			print("Add task button pressed!")
+
 		# Sets up start screen.
 		self.window = Tk()
 		self.window.geometry = str(w_width) + "x" + str(w_height)
