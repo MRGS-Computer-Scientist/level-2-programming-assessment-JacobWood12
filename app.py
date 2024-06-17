@@ -8,16 +8,13 @@ task_font = ("Verdana", 30)
 class App():
 	""" Contains the main window for now. """
 	def __init__(self):
-
-
-
 		# Sets up start screen.
 		self.window = Tk()
 		self.window.geometry = str(w_width) + "x" + str(w_height)
 		self.window.title(window_title)
 
 		# This is the frame where the list of tasks will go.
-		self.tasks_frame = Frame(width=w_width, height=650)
+		self.tasks_frame = Frame(background=tasks_bg_colour, width=w_width, height=650)
 		self.tasks_frame.grid()
 
 		# This is the frame where the buttons at the bottom will go.
@@ -59,7 +56,7 @@ class App():
 
 		task_window = Tk()
 		task_window.geometry = "200x200"
-		
+
 		task_label  = Label(task_window, text="Task " + str(instance), font=task_font)
 		task_label.pack()
 
