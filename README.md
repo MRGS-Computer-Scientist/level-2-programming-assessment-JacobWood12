@@ -1,5 +1,16 @@
 # Level 2 Programming Assessment - Jacob Wood
 
+> [!WARNING]
+> If you want to run this program, **run main.py**. Running any of the other files will **not** work.
+
+<!-- These are two separate blockquotes, but markdownlint doesn't like that, so this comment is here to separate them. -->
+
+> [!IMPORTANT]
+> To run this program, you will need installed:
+>
+> - Python (I used 3.12.3 64bit on macOS 14 & 15 through Visual Studio Code).
+> - Tkinter (I used the version included in the Python version above).
+
 ## Links
 
 - Google Classroom assignment - [Level 2 NCEA Assessment - Project Documentation](https://classroom.google.com/c/NjYyMTMxNTA2OTEz/a/NjU5MjYxMTI0NzQ0/details).
