@@ -1,4 +1,4 @@
-""" The app class. """
+""" The main window of the app. """
 # Tkinter is for the GUI, app_settings contains all the global variables.
 from tkinter import Tk, Frame, Button, Label
 from app_settings import w_width, w_height, window_title, tasks_bg_colour, buttons_bg_colour
