@@ -1,9 +1,8 @@
 """ The main window of the app. """
-# Tkinter is for the GUI, app_settings contains all the global variables.
-from tkinter import Tk, Frame, Button, Label
+# Tkinter is for the GUI, app_settings contains all the global variables, and task is the task window(s).
+from tkinter import Tk, Frame, Button
 from app_settings import w_width, w_height, window_title, tasks_bg_colour, buttons_bg_colour
-
-task_font = ("Verdana", 30)
+from task import Task
 
 class App():
 	""" Contains the main window for now. """
@@ -52,12 +51,4 @@ class App():
 
 	def task_button_pressed(self, instance):
 		""" Activated when one of the task buttons is pressed. """
-		print(f"Task button {instance} pressed!")
-
-		task_window = Tk()
-		task_window.geometry = "200x200"
-
-		task_label  = Label(task_window, text="Task " + str(instance), font=task_font)
-		task_label.pack()
-
-		task_window.mainloop()
+		task_window = Task(instance)
