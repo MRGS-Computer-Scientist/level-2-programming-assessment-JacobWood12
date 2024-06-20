@@ -52,3 +52,5 @@ class App():
 	def task_button_pressed(self, instance):
 		""" Activated when one of the task buttons is pressed. """
 		task_window = Task(instance)
+		# Pylint did not like that task_window wasn't used, so here is it being used:
+		#print(task_window) # Printing it doesn't do anything though.
