@@ -11,5 +11,6 @@ buttons_bg_colour = str("#D9D9D9")
 # Title of the main window.
 window_title = str("Homework Planner.")
 
-# Font for the task buttons.
+# For the task buttons.
 task_font = ("Verdana", 30)
+task_button_width = int(22.5)

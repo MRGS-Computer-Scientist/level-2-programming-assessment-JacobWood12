@@ -1,7 +1,7 @@
 """ The main window of the app. """
 # Tkinter is for the GUI, app_settings contains all the global variables, and task is the task window(s).
 from tkinter import Tk, Frame, Button
-from app_settings import w_width, w_height, window_title, tasks_bg_colour, buttons_bg_colour
+from app_settings import w_width, w_height, window_title, tasks_bg_colour, buttons_bg_colour, task_button_width, task_font
 from task import Task
 
 class App():
@@ -29,16 +29,16 @@ class App():
 		self.exit_button.place(relx=0.75, rely=0.5, anchor="center")
 
 		# Task buttons.
-		self.task_button1 = Button(self.tasks_frame, text="Task 1", width=25, bg="#FF0000", font=("Verdana", 20), command= lambda: self.task_button_pressed(1))
+		self.task_button1 = Button(self.tasks_frame, text="Task 1", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(1))
 		self.task_button1.grid(row=0,column=0)
 
-		self.task_button2 = Button(self.tasks_frame, text="Task 2", width=25, bg="red", font=("Verdana", 20), command= lambda: self.task_button_pressed(2))
+		self.task_button2 = Button(self.tasks_frame, text="Task 2", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(2))
 		self.task_button2.grid(row=1,column=0)
 
-		self.task_button3 = Button(self.tasks_frame, text="Task 3", width=25, bg="red", font=("Verdana", 20), command= lambda: self.task_button_pressed(3))
+		self.task_button3 = Button(self.tasks_frame, text="Task 3", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(3))
 		self.task_button3.grid(row=2,column=0)
 
-		self.task_button4 = Button(self.tasks_frame, text="Task 4", width=25, bg="red", font=("Verdana", 20), command= lambda: self.task_button_pressed(4))
+		self.task_button4 = Button(self.tasks_frame, text="Task 4", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(4))
 		self.task_button4.grid(row=3,column=0)
 
 		# Starts the program looping to open the window.
@@ -53,4 +53,4 @@ class App():
 		""" Activated when one of the task buttons is pressed. """
 		task_window = Task(instance)
 		# Pylint did not like that task_window wasn't used, so here is it being used:
-		#print(task_window) # Printing it doesn't do anything though.
+		print(task_window) # Printing it doesn't do anything though.
