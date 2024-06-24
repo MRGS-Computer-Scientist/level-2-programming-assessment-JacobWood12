@@ -13,4 +13,4 @@ window_title = str("Homework Planner.")
 
 # For the task buttons.
 task_font = ("Verdana", 30)
-task_button_width = int(22.5)
+task_button_width = int(20)
