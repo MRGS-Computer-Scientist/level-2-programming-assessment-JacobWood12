@@ -29,16 +29,19 @@ class App():
 		self.exit_button.place(relx=0.75, rely=0.5, anchor="center")
 
 		# Task buttons.
-		self.task_button1 = Button(self.tasks_frame, text="Task 1", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(1))
+		self.task_button1 = Button(self.tasks_frame, text="Task 1", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(1), bg="#EB473D")
 		self.task_button1.grid(row=0,column=0)
 
-		self.task_button2 = Button(self.tasks_frame, text="Task 2", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(2))
+		self.task_button2 = Button(self.tasks_frame, text="Task 2", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(2), bg="#4295AF")
 		self.task_button2.grid(row=1,column=0)
 
-		self.task_button3 = Button(self.tasks_frame, text="Task 3", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(3))
+		self.task_button3 = Button(self.tasks_frame, text="Task 3", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(3), bg="#F0965B")
 		self.task_button3.grid(row=2,column=0)
 
-		self.task_button4 = Button(self.tasks_frame, text="Task 4", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(4))
+		self.task_button4 = Button(self.tasks_frame, text="Task 4", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(4), bg="#ED70C0")
+		self.task_button4.grid(row=3,column=0)
+
+		self.task_button4 = Button(self.tasks_frame, text="Task 4", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(5), bg="#7A4EE3")
 		self.task_button4.grid(row=3,column=0)
 
 		# Starts the program looping to open the window.
