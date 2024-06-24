@@ -41,8 +41,8 @@ class App():
 		self.task_button4 = Button(self.tasks_frame, text="Task 4", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(4), bg="#ED70C0")
 		self.task_button4.grid(row=3,column=0)
 
-		self.task_button4 = Button(self.tasks_frame, text="Task 4", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(5), bg="#7A4EE3")
-		self.task_button4.grid(row=3,column=0)
+		self.task_button5 = Button(self.tasks_frame, text="Task 5", width=task_button_width, font=task_font, command= lambda: self.task_button_pressed(5), bg="#7A4EE3")
+		self.task_button5.grid(row=4,column=0)
 
 		# Starts the program looping to open the window.
 		self.window.mainloop()
