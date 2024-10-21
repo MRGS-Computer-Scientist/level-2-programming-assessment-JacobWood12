@@ -3,8 +3,6 @@
 > [!WARNING]
 > If you want to run this program, **run main.py**. Running any of the other files will **not** work.
 
-<!-- These are two separate blockquotes, but markdownlint doesn't like that, so this comment is here to separate them. -->
-
 > [!IMPORTANT]
 > To run this program, you will need installed:
 >
