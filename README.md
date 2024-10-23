@@ -6,7 +6,7 @@
 > [!IMPORTANT]
 > To run this program, you will need installed:
 >
-> - Python (I used 3.13 64bit on macOS 14 & 15 through Visual Studio Code).
+> - Python (I used 3.13 64-bit on macOS 14 & 15 through Visual Studio Code).
 > - Tkinter (I used the version included in the Python version above).
 
 ## Links
